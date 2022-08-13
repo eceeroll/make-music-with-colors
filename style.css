@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Permanent+Marker&family=Roboto:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Permanent Marker', cursive;
+    background-color: #eaf8f6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+header h1 {
+    margin: 50px 0px 26px 0px;
+    font-size: 35px;
+    text-align: center;
+}
+
+header p {
+    font-size: 24px;
+}
+
+.pads {
+    background-color: lightseagreen;
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+}
+
+.pads > div {
+    height: 210px;
+    width: 100px;
+    flex: 1;
+}
+
+.pad1 {
+    background-color: #33a8c7;
+}
+.pad2 {
+    background-color: #fdf148;
+}
+.pad3 {
+    background-color: #d883ff;
+}
+.pad4 {
+    background-color: #a0e426;
+}
+.pad5 {
+    background-color: #ff1d15;
+}
+.pad6 {
+    background-color: #f050ae;
+}
+
+@keyframes jump {
+    0% {
+      bottom: 0%;
+      left: 20%;
+    }
+    50% {
+      bottom: 50%;
+      left: 50%;
+    }
+  
+    100% {
+      bottom: 00%;
+      left: 80%;
+    }
+  }
+
+  .visual > div {
+    position: absolute;
+    bottom: 0%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transform: scale(1);
+    z-index: -1;
+  }
